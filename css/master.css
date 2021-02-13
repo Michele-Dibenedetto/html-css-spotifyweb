@@ -1,0 +1,148 @@
+/* generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.bar {
+  display: inline-block;
+  height: 5px;
+  border-radius: 5px;
+  content: '';
+  background-color: #5a5a5a;
+}
+
+/* inizio main */
+main {
+  height: calc(100% - 90px);
+}
+/*inizio main menu */
+/* main nav */
+.main_nav {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  min-height: 300px;
+  background-color: black;
+}
+
+.menu_content {
+}
+.menu_content ul img {
+  height: 20px;
+}
+.menu_content .logo {
+  height: 50px;
+}
+
+.playlist_nav {
+  overflow-y: scroll;
+}
+/* menu user */
+.menu_user {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+.menu_user img {
+  height: 20px;
+}
+/* fine main menu */
+
+/* inizio main container */
+.body_container {
+  width: calc(100% - 200px);
+  height: 100%;
+  background-color: #141922;
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+.fixed_body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: calc(100% - 200px);
+  height: 70px;
+  background-color: #080b128c;
+}
+
+.body_content {
+  margin-top: 70px;
+  color: white;
+}
+
+.row img {
+  height: 100%;
+  width: 90%;
+}
+/* fine main content */
+
+/* inizio footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background-color: #282828;
+  color: white;
+}
+/* inizio song */
+.song {
+  width: 25%;
+  max-height: 100%;
+}
+.song img {
+  height: 40px;
+}
+.name_song {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* fine song */
+/* iniZio play */
+.play {
+  width: 40%;
+}
+.bar_play {
+  width: 55%;
+
+}
+/* fine play */
+.volume {
+  width: 25%;
+}
+.bar_volume {
+  width: 20%;
+}
+/* fine footer */
+
+/* responsive tablet  */
+@media screen and (max-width:992px) {
+}
+
+/* responsive smartphone */
+@media screen and (max-width:767px) {
+  /* main menu */
+  .main_nav {
+    width: 70px;
+  }
+
+  .body_container {
+    width: calc(100% - 70px)
+  }
+  .fixed_body {
+    width: calc(100% - 70px)
+  }
+}
