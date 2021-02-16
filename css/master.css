@@ -188,6 +188,9 @@ main {
   border: 1px solid white;
   padding: 10px 40px;
 }
+.fixed_body a:hover {
+  transform: scale(1.1);
+}
 
 .body_content {
   margin-top: 70px;
@@ -219,6 +222,26 @@ main {
 .music {
   width: 17%;
   padding-right: 20px;
+  position: relative;
+}
+.layover {
+  cursor: pointer;
+  width: 90%;
+  height: 63%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #0000007d;
+}
+.layover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.layover:hover {
+  opacity: 1;
 }
 .playlist_round img {
   border-radius: 50%;
@@ -254,6 +277,9 @@ footer {
   margin: 0 10px 0 5px;
   vertical-align: middle;
 }
+.name_song a:hover {
+  text-decoration: underline;
+}
 .song > a {
   margin: 0 5px;
 }
@@ -275,6 +301,9 @@ footer {
 .commonds .fa-play-circle {
   font-size: 25px;
   vertical-align: middle;
+}
+.commonds .fa-play-circle:hover {
+  transform: scale(1.1);
 }
 .bar_play {
   width: 55%;
